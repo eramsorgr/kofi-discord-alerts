@@ -16,7 +16,15 @@ A simple NodeJS server to accept requests from Ko-Fi Webhook service and transla
 
  *Check out [pm2](https://www.npmjs.com/package/pm2) or [forever](https://www.npmjs.com/package/forever) to have your server running 24/7!*
 
-You can optionally use CloudFlare or simply your server IP address, for instance http://123.456.789:SERVERPORTHERE/post as the webhook link and it will work like a charm!
+ You can optionally use CloudFlare or simply your server IP address, for instance http://123.456.789:SERVERPORTHERE/post as the webhook link and it will work like a charm!
+
+ Check out Glitch.com if you would like your server to be hosted for free rather than paying for VPS or Dedicated server!
+
+# Usage
+
+ Go to https://ko-fi.com/manage/webhooks and enter your server IP/domain and add `/post` to the end. For example, `http://example.com/post`, hit **Update** and you are ready to roll! As long as your server is running, you will receive notifications automatically to the webhook you have provided in the configuration file! Enjoy :)
+
+
 
 # Issues and Contributors
 
