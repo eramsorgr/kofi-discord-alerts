@@ -6,7 +6,7 @@ A simple NodeJS server to accept requests from Ko-Fi Webhook service and transla
 [![GitHub license](https://img.shields.io/github/license/EramsorGR/kofi-discord-alerts)](https://github.com/EramsorGR/kofi-discord-alerts/blob/master/LICENSE)
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/EramsorGR/kofi-discord-alerts.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/EramsorGR/kofi-discord-alerts/alerts/)
 [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/EramsorGR/kofi-discord-alerts.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/EramsorGR/kofi-discord-alerts/context:javascript)
-[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Z8Z81PVKJ)
+
 # Installation
 
  - You need NodeJS v12.16.2! Get it [here](https://nodejs.org/en/download/)
@@ -22,3 +22,4 @@ You can optionally use CloudFlare or simply your server IP address, for instance
 
 Feel free to submit issues, ideas and others as well as contribute to the project! 
  
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Z8Z81PVKJ)
