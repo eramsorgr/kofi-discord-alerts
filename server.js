@@ -56,18 +56,24 @@ const webhook = new Webhook(config.webhook_link); //Declaring the Webhook here
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-
 app.post('/post', async function(req, res) {
     const data = req.body.data;
     if (!data) return;
-    const embed = new MessageBuilder();
-    embed.setTitle('New Ko-Fi Supporter!');
-    embed.setColor(2730976);
-    embed.addField(`From`, data.from_name);
-    embed.addField(`Amount`, data.amount, true);
-    embed.addField(`Message`, data.message);
-    embed.setTimestamp();
-    await webhook.send(embed);
+
+    try {
+        const obj = JSON.parse(data);
+        const embed = new MessageBuilder();
+        embed.setTitle('New Ko-Fi Supporter!');
+        embed.setColor(2730976);
+        embed.addField(`From`, `${obj.from_name}`, true);
+        embed.addField(`Amount`, `${obj.amount}`, true);
+        embed.addField(`Message`, `${obj.message}`);
+        embed.setTimestamp();
+        await webhook.send(embed);
+    } catch (err) {
+        console.error(err)
+        return res.json({success: false, error: err})
+    }
     return res.json({success: true});
 });
 
