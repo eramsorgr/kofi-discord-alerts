@@ -56,10 +56,26 @@ const webhook = new Webhook(config.webhook_link); //Declaring the Webhook here
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.use('/', async function(req, res) {
+
+app.post('/post', async function(req, res) {
+    const data = req.body.data;
+    if (!data) return;
+    const embed = new MessageBuilder();
+    embed.setTitle('New Ko-Fi Supporter!');
+    embed.setColor(2730976);
+    embed.addField(`From`, data.from_name);
+    embed.addField(`Amount`, data.amount, true);
+    embed.addField(`Message`, data.message);
+    embed.setTimestamp();
+    await webhook.send(embed);
+    return res.json({success: true});
+});
+
+
+app.use('/', async function(req, res) { //Handiling requests to the main endpoint
     res.json({message: "Ko-Fi Server is online!"});
     return;
-  });
+});
 
 const httpServer = http.createServer(app); //Setting up the server
 httpServer.listen(config.server_port, function() {
