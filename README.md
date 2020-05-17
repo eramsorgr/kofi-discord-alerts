@@ -1,11 +1,10 @@
 # Ko-Fi Discord Alerts Server
 
 A simple NodeJS server to accept requests from Ko-Fi Webhook service and translate them into a Discord embed!
+
 [![GitHub issues](https://img.shields.io/github/issues/EramsorGR/kofi-discord-alerts)](https://github.com/EramsorGR/kofi-discord-alerts/issues)
 [![GitHub license](https://img.shields.io/github/license/EramsorGR/kofi-discord-alerts)](https://github.com/EramsorGR/kofi-discord-alerts/blob/master/LICENSE)
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/EramsorGR/kofi-discord-alerts.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/EramsorGR/kofi-discord-alerts/alerts/)
-[![Total alerts](https://img.shields.io/lgtm/alerts/g/EramsorGR/kofi-discord-alerts.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/EramsorGR/kofi-discord-alerts/alerts/)
-[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/EramsorGR/kofi-discord-alerts.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/EramsorGR/kofi-discord-alerts/context:javascript)
 [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/EramsorGR/kofi-discord-alerts.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/EramsorGR/kofi-discord-alerts/context:javascript)
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Z8Z81PVKJ)
 # Installation
