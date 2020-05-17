@@ -12,3 +12,5 @@ A simple NodeJS server to accept requests from Ko-Fi Webhook service and transla
  *Check out [pm2](https://www.npmjs.com/package/pm2) or [forever](https://www.npmjs.com/package/forever) to have your server running 24/7!*
 
  **NOTE** You will require a domain and an SSL certificate to run the service (as of todays webhook API Ko-Fi has)
+ 
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Z8Z81PVKJ)
