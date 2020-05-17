@@ -79,5 +79,5 @@ app.use('/', async function(req, res) { //Handiling requests to the main endpoin
 
 const httpServer = http.createServer(app); //Setting up the server
 httpServer.listen(config.server_port, function() {
-  console.log(`Ko-Fi Server online`);
+  console.log(`Ko-Fi Server online on port ${config.server_port}`);
 });
