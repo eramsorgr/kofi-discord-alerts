@@ -56,5 +56,12 @@ const webhook = new Webhook(config.webhook_link); //Declaring the Webhook here
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+app.use('/', async function(req, res) {
+    res.json({message: "Ko-Fi Server is online!"});
+    return;
+  });
+
 const httpServer = http.createServer(app); //Setting up the server
-httpServer.listen(config.server_port);
+httpServer.listen(config.server_port, function() {
+  console.log(`Ko-Fi Server online`);
+});

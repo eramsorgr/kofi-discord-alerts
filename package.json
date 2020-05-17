@@ -1,0 +1,29 @@
+{
+  "name": "kofi-discord-alerts",
+  "version": "0.0.5",
+  "description": "A simple NodeJS server to accept requests from Ko-Fi Webhook service and translate them into a Discord embed!",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "discord-webhook-node": "^1.0.7",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EramsorGR/kofi-discord-alerts.git"
+  },
+  "keywords": [
+    "kofi"
+  ],
+  "author": "ENicholas S. (EramsorGR)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EramsorGR/kofi-discord-alerts/issues"
+  },
+  "homepage": "https://github.com/EramsorGR/kofi-discord-alerts#readme"
+}
