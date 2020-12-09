@@ -71,7 +71,7 @@ app.post('/post', async function(req, res) {
         embed.setTimestamp();
         await webhook.send(embed);
     } catch (err) {
-        console.error(err)
+        console.error(err);
         return res.json({success: false, error: err})
     }
     return res.json({success: true});
