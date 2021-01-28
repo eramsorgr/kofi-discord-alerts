@@ -72,7 +72,7 @@ app.post('/post', async function(req, res) {
         await webhook.send(embed);
     } catch (err) {
         console.error(err);
-        return res.json({success: false, error: err})
+        return res.json({success: false, error: err});
     }
     return res.json({success: true});
 });
